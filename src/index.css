@@ -17,6 +17,10 @@ body {
   border-color: #3b3b3b;
   -webkit-user-select: none;
   user-select: none;
+  -webkit-text-size-adjust: 100%; /* Safari, Chrome */
+  -moz-text-size-adjust: 100%; /* Firefox (lama) */
+  -ms-text-size-adjust: 100%; /* IE (lama) */
+  text-size-adjust: 100%; /* Standar modern */
 }
 
 canvas {

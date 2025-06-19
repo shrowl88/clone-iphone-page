@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
-
 //...
 import * as Sentry from "@sentry/react";
 
@@ -27,6 +27,8 @@ Sentry.init({
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/clone-iphone-page">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
